@@ -43,9 +43,9 @@ module.exports = (robot) ->
 #RemoteFest
 module.exports = (robot) ->
   job = new cronJob(
-    cronTime: "00 28 16 * * FRI"
+    cronTime: "* * * * * *"
     onTick: ->
-      robot.messageRoom "563533", "Time for RemoteFest - http://bit.ly/big-astronaut-all-hands"
+      robot.messageRoom "#watercooler", "Time for RemoteFest - http://bit.ly/big-astronaut-all-hands"
       start: false
       timeZone: "America/Chicago"
   )
