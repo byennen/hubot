@@ -23,7 +23,7 @@ module.exports = (robot) ->
   cron_afternoon = '00 30 16 * * 2-6'
   #cron_afternoon = '*/1 * * * * *'
   cron_clear_cache   = '00 00 06 * * 2-6'
-  channel = '#ScraperWikians'
+  channel = '#watercooler'
 
   robot.brain.on 'loaded', ->
     if robot.brain.data.pears
