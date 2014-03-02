@@ -31,9 +31,9 @@ module.exports = (robot) ->
 
   #Autotest.io Stand
   job = new cronJob(
-    cronTime: "00 58 9 ? * MON-FRI"
+    cronTime: "00 58 9 * * MON-FRI"
     onTick: ->
-      robot.messageRoom "autotest", "AutoTest.io Stand UP - http://bit.ly/ba-hangout-stand"
+      robot.messageRoom 'autotest', "AutoTest.io Stand UP - http://bit.ly/ba-hangout-stand"
       start: false
       timeZone: "America/Chicago"
   )
@@ -41,9 +41,9 @@ module.exports = (robot) ->
 
   #F75 Stand
   job = new cronJob(
-    cronTime: "00 28 10 ? * MON-FRI"
+    cronTime: "00 28 10 * * MON-FRI"
     onTick: ->
-      robot.messageRoom "factor75_discussion", "Factor 75 Stand UP - http://bit.ly/ba-hangout-stand"
+      robot.messageRoom 'factor75_discussion"', "Factor 75 Stand UP - http://bit.ly/ba-hangout-stand"
       start: false
       timeZone: "America/Chicago"
   )
