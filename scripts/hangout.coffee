@@ -11,7 +11,7 @@
 #   Hubot pair4 - http://bit.ly/ba-pair-4
 
 
-#module.exports = (robot) ->
+module.exports = (robot) ->
 #  robot.respond /hangout\s?(.*)?/i, (msg) ->
 #    msg.send "http://bit.ly/ba-hangout"
 #
