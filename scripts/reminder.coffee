@@ -29,9 +29,19 @@ module.exports = (robot) ->
   )
   job.start()
 
+  #Autotest.io IPM
+  job = new cronJob(
+    cronTime: "00 58 10 * * MON"
+    onTick: ->
+      robot.messageRoom 'autotest', "AutoTest.io IPM - http://bit.ly/ba-hangout-stand"
+      start: false
+      timeZone: "America/Chicago"
+  )
+  job.start()
+
   #Autotest.io Stand
   job = new cronJob(
-    cronTime: "00 58 9 * * MON-FRI"
+    cronTime: "00 58 9 * * TUE-FRI"
     onTick: ->
       robot.messageRoom 'autotest', "AutoTest.io Stand UP - http://bit.ly/ba-hangout-stand"
       start: false
@@ -43,7 +53,7 @@ module.exports = (robot) ->
   job = new cronJob(
     cronTime: "00 28 10 * * MON-FRI"
     onTick: ->
-      robot.messageRoom 'factor75_discussion"', "Factor75.com Stand UP - https://www.sococo.com/web/join/bj92w16urkfwibt9bdvn1j69"
+      robot.messageRoom 'factor75_discussion', "Factor75.com Stand UP - https://www.sococo.com/web/join/bj92w16urkfwibt9bdvn1j69"
       start: false
       timeZone: "America/Chicago"
   )
