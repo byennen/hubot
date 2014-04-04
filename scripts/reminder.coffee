@@ -43,7 +43,7 @@ module.exports = (robot) ->
   job = new cronJob(
     cronTime: "00 58 9 * * TUE-FRI"
     onTick: ->
-      robot.messageRoom 'autotest', "AutoTest.io Stand UP - http://bit.ly/ba-hangout-stand"
+      robot.messageRoom 'gorillatest', "Gorilla Test Stand UP - http://bit.ly/ba-hangout-stand"
       start: false
       timeZone: "America/Chicago"
   )
