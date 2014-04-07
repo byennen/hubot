@@ -29,17 +29,17 @@ module.exports = (robot) ->
   )
   job.start()
 
-  #Autotest.io IPM
+  #Gorilla Test IPM
   job = new cronJob(
     cronTime: "00 58 10 * * MON"
     onTick: ->
-      robot.messageRoom 'autotest', "AutoTest.io IPM - http://bit.ly/ba-hangout-stand"
+      robot.messageRoom 'gorillatest', "GorillaTest IPM - http://bit.ly/ba-hangout-stand"
       start: false
       timeZone: "America/Chicago"
   )
   job.start()
 
-  #Autotest.io Stand
+  #GorillaTest Stand
   job = new cronJob(
     cronTime: "00 58 9 * * TUE-FRI"
     onTick: ->
