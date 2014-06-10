@@ -31,9 +31,9 @@ module.exports = (robot) ->
 
   #Gorilla Test IPM
   job = new cronJob(
-    cronTime: "00 58 10 * * MON"
+    cronTime: "00 58 11 * * MON"
     onTick: ->
-      robot.messageRoom 'gorillatest', "GorillaTest IPM - http://bit.ly/ba-hangout-stand"
+      robot.messageRoom 'gorillatest', "Gorilla Test IPM - https://www.sococo.com/web/join/2n43is8jvlv78c1o25e367dv"
       start: false
       timeZone: "America/Chicago"
   )
@@ -41,20 +41,9 @@ module.exports = (robot) ->
 
   #GorillaTest Stand
   job = new cronJob(
-    cronTime: "00 58 9 * * TUE-FRI"
+    cronTime: "00 58 11 * * TUE-FRI"
     onTick: ->
-      robot.messageRoom 'gorillatest', "Gorilla Test Stand UP - http://bit.ly/ba-hangout-stand"
-      start: false
-      timeZone: "America/Chicago"
-  )
-  job.start()
-
-  #F75 Stand
-  job = new cronJob(
-    cronTime: "00 28 10 * * MON-FRI"
-    onTick: ->
-      #robot.messageRoom 'factor75_discussion', "Factor75.com Stand UP - https://www.sococo.com/web/join/bj92w16urkfwibt9bdvn1j69"
-      robot.messageRoom 'factor75_disussion', "Factor75 Stand UP - http://bit.ly/ba-hangout-stand"
+      robot.messageRoom 'gorillatest', "Gorilla Test Stand UP - https://www.sococo.com/web/join/2n43is8jvlv78c1o25e367dv"
       start: false
       timeZone: "America/Chicago"
   )
