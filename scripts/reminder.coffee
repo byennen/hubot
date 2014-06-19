@@ -19,31 +19,31 @@
 cronJob = require("cron").CronJob
 
 module.exports = (robot) ->
-  #RemoteFest
-  job = new cronJob(
-    cronTime: "00 28 16 * * FRI"
-    onTick: ->
-      robot.messageRoom 'general', "Time for RemoteFest - http://bit.ly/big-astronaut-all-hands"
-      start: false
-      timeZone: "America/Chicago"
-  )
-  job.start()
-
-  #Gorilla Test IPM
-  job = new cronJob(
-    cronTime: "00 58 11 * * MON"
-    onTick: ->
-      robot.messageRoom 'gorillatest', "Gorilla Test IPM - https://www.sococo.com/web/join/2n43is8jvlv78c1o25e367dv"
-      start: false
-      timeZone: "America/Chicago"
-  )
-  job.start()
+#RemoteFest
+#  job = new cronJob(
+#    cronTime: "00 28 16 * * FRI"
+#    onTick: ->
+#      robot.messageRoom 'general', "Time for RemoteFest - http://bit.ly/big-astronaut-all-hands"
+#      start: false
+#      timeZone: "America/Chicago"
+#  )
+#  job.start()
+#
+#  #Gorilla Test IPM
+#  job = new cronJob(
+#    cronTime: "00 58 11 * * MON"
+#    onTick: ->
+#      robot.messageRoom 'gorillatest-team', "Gorilla Test IPM - https://www.sococo.com/web/join/2n43is8jvlv78c1o25e367dv"
+#      start: false
+#      timeZone: "America/Chicago"
+#  )
+#  job.start()
 
   #GorillaTest Stand
   job = new cronJob(
-    cronTime: "00 58 11 * * TUE-FRI"
+    cronTime: "00 28 11 * * MON-FRI"
     onTick: ->
-      robot.messageRoom 'gorillatest', "Gorilla Test Stand UP - https://www.sococo.com/web/join/2n43is8jvlv78c1o25e367dv"
+      robot.messageRoom 'gorillatest-team', "Gorilla Test Stand UP - http://bit.ly/gorilla-test"
       start: false
       timeZone: "America/Chicago"
   )
